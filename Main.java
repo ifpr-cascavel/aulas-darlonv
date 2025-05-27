@@ -1,10 +1,13 @@
-import utils.Io;
+import utils.IO;
+import aulas.*;
 
 public class Main{
 
     public static void main(String[] args){
-        System.out.println("Hello world");
+        
 
-        Io.hello();
+        Aula03.aula();
+        // Aula04.aula();
     }
 }
+
