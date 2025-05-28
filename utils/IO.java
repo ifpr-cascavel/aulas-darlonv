@@ -8,6 +8,10 @@ public class IO {
         System.out.println("Hello");
     }
 
+    public static void imprimir(String texto){
+        System.out.println(texto);
+    }
+
     public static int lerValorInteiro(){
         int valor = tecladoScanner.nextInt();
         return valor;
