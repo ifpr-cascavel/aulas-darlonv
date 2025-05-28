@@ -3,7 +3,7 @@
 
 package aulas;
 
-public class Aula03 {
+public class Aula04 {
 
     //Entrada
 
@@ -12,6 +12,7 @@ public class Aula03 {
     //Saida
 
     public static void aula(){
-        
+        System.out.println("Aula 04");
+
     }    
 }
