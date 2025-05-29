@@ -18,7 +18,8 @@ tree
 ├── README.md
 ├── aulas
 │   ├── Aula03.java
-│   └── Aula04.java
+│   ├── Aula04.java
+│   └── AulaModelo.java
 ├── test
 │   └── TestAula04.java
 └── utils

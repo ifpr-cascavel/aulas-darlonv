@@ -8,7 +8,7 @@ public class Aula04 {
 
 
     public static void aula(){
-        System.out.println("## Aula 04 - Organização do repositório, Makefile e Testes ##");
+        IO.imprimir("## Aula 04 - Organização do repositório, Makefile e Testes ##");
     
         //Exercício 01
         ex01();

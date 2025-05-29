@@ -6,7 +6,7 @@ package aulas;
 public class Aula03 {
 
     public static void aula(){
-        System.out.println("Aula 03 - Repositório Github.");
+        IO.imprimir("Aula 03 - Repositório Github.");
         
     }
 
@@ -22,7 +22,7 @@ public class Aula03 {
 
     public static void ex02(){
         //Variáveis
-        
+
         //Entrada
 
         //Processamento
