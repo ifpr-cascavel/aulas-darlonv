@@ -1,17 +1,32 @@
 //Data: 26/05/2025
-//Conteúdo: Repositório no github
+//Conteúdo: Repositório no GitHub
 
 package aulas;
 
 public class Aula03 {
 
-    //Entrada
-
-    //Processamento
-
-    //Saida
-
     public static void aula(){
+        System.out.println("Aula 03 - Repositório Github.");
         
-    }    
+    }
+
+    public static void ex01(){
+        //Variáveis
+        
+        //Entrada
+
+        //Processamento
+
+        //Saida
+    }
+
+    public static void ex02(){
+        //Variáveis
+        
+        //Entrada
+
+        //Processamento
+
+        //Saida
+    }
 }

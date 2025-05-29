@@ -14,7 +14,12 @@ public class TestAula04 {
     }
 
     public static void testEx01(){
+
+        //Variáveis
+        //Parâmetros para os testes
         int valor_1=0, valor_2=0, saida_esperada=0, saida_obtida=0;
+
+        //Mensagem padrão a ser mostrada caso o teste seja incorreto
         String texto_erro = "## Saída Incorreta!! ##";
         try{
             //Teste 01
@@ -52,8 +57,10 @@ public class TestAula04 {
 
 
         }catch(AssertionError error){
+            //Mensagem de erro
             System.err.println(error.getMessage());
 
+            //Mostra os valores em que o teste saiu errado
             System.err.println("valor_1: " + valor_1);
             System.err.println("valor_2: " + valor_2);
             System.err.println("saida_esperada: " + saida_esperada);
