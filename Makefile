@@ -1,9 +1,9 @@
 run: build
-	# Compilando..
+	# Executando..
 	java -cp bin Main
 
 build:
-	# Executando..
+	# Compilando..
 	javac -d bin Main.java
 
 clean:
