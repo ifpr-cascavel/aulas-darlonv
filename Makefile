@@ -1,10 +1,13 @@
 run: build
+	# Compilando..
 	java -cp bin Main
 
 build:
+	# Executando..
 	javac -d bin Main.java
 
 clean:
+	# Removendo..
 	rm -r bin
 
 git:
