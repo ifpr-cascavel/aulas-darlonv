@@ -8,7 +8,8 @@ public class Main{
         IO.imprimir("##### Algoritmos e Estruturas de Dados #####");
         
         // Aula03.aula();
-        Aula04.aula();
+        // Aula04.aula();
+        Aula05.aula();
     }
 }
 
