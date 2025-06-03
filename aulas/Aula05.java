@@ -11,7 +11,9 @@ public class Aula05 {
         IO.imprimir("## Aula 05 - Estruturas de Repetição ##");
     
         //Exercício 01
-        ex01();
+        // ex01();
+        //Exercício 02
+        ex02();
 
     }
 
@@ -21,17 +23,9 @@ public class Aula05 {
     */
     public static void ex01(){
         IO.imprimir("Exercício Intervalo de 10 a 200");
-        //Variáveis
-        
-        //Entrada
-        //Leitura dos valores
 
-        //Processamento
         //Cálculos realizados
         processarIntervaloDe10A200();
-
-        //Saída
-        //Apresentação dos resultados   
     }
 
     /**
@@ -54,5 +48,27 @@ public class Aula05 {
         }
 
     }
+
+    /**
+    * Mostra na uma sequencia de valores
+    * @param inicio inicio do intervalo
+    * @param fim ultimo valor do intervalo
+    */
+    public static void processarMostrarSequencia(int inicio, int fim){
+        int incremento = 1;
+        int indice = inicio;
+        
+        if(inicio > fim){
+            incremento = -1;
+        }
+
+        while(indice != fim+incremento){
+            IO.imprimirValorInteiro(indice);
+            indice = indice + incremento;
+        }
+
+
+    }
+
 
 }
