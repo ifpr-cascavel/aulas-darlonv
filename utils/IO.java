@@ -35,4 +35,24 @@ public class IO {
     public static void imprimirValorInteiro(int valor){
         imprimir("" + valor);
     }
+
+    /**
+    * Leitura de uma String a partir da entrada padrão
+    * @return String da entrada padrão
+    */
+    public static String lerPalavra(){
+        String texto = tecladoScanner.next();
+        return texto;
+    }
+
+    /**
+    * Leitura de uma String a partir da entrada padrão
+    * @param mensagem Mensagem a ser mostrada ao usuário
+    * @return String da entrada padrão
+    */
+    public static String lerPalavra(String mensagem){
+        System.out.println(mensagem);
+        String texto = tecladoScanner.next();
+        return texto;
+    }
 }
