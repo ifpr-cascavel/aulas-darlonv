@@ -15,6 +15,8 @@ public class Aula18 {
 
         // Exercício 01
         ex01();
+        // ex02();
+        // ex03();
 
     }
 
@@ -42,6 +44,81 @@ public class Aula18 {
             writer.write("Primeira linha");
             writer.newLine();
             writer.write("Segunda linha");
+
+            writer.close();
+            file_writer.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        // Apresentação dos resultados
+    }
+
+    public static void ex02() {
+        // Variáveis
+        BufferedWriter writer = null;
+        FileWriter file_writer = null;
+
+        // Gera o arquivo
+        try {
+            file_writer = new FileWriter("numeros.txt");
+            writer = new BufferedWriter(file_writer);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        // Saída
+        // Salva dados no arquivo
+        try {
+
+            for(int idx=1; idx<=10; idx++){
+                writer.write("" + idx + "\n");    
+            }
+
+            writer.close();
+            file_writer.close();
+            
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        // Apresentação dos resultados
+    }
+
+    public static void ex03() {
+        // Variáveis
+        BufferedWriter writer = null;
+        FileWriter file_writer = null;
+
+        String nome;
+        int inicio, fim;
+
+        //Pergunta o nome
+        IO.imprimir("Nome: ");
+        nome = IO.lerPalavra();
+
+        IO.imprimir("Inicio: ");
+        inicio = IO.lerValorInteiro();
+        IO.imprimir("fim: ");
+        fim = IO.lerValorInteiro();
+
+
+        // Gera o arquivo
+        try {
+            file_writer = new FileWriter("/tmp/" + nome + ".txt");
+            writer = new BufferedWriter(file_writer);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        // Saída
+        // Salva dados no arquivo
+        try {
+
+            for(int idx=inicio; idx<=fim; idx++){
+                writer.write("" + idx + "\n");    
+            }
 
             writer.close();
             file_writer.close();
