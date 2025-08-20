@@ -12,6 +12,13 @@ public class IO {
     }
 
     /**
+    * Fecha a entrada padrão.
+    */
+    public static void fechar(){
+        tecladoScanner.close();
+    }
+
+    /**
     * Mostra uma mensagem na tela.
     * @param texto Mensagem a ser mostrada na tela
     */
