@@ -27,6 +27,14 @@ public class IO {
     }
 
     /**
+    * Mostra uma mensagem na saída de erro.
+    * @param texto Mensagem a ser mostrada.
+    */
+    public static void imprimirErro(String texto){
+        System.err.println(texto);
+    }
+
+    /**
     * Leitura de um valor inteiro a partir da entrada padrão
     * @return Valor inteiro obtido da entrada padrão
     */
