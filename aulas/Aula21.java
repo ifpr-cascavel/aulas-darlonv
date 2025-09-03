@@ -13,7 +13,8 @@ public class Aula21 {
         IO.imprimir("## Aula 21 - Listar arquivos ##");
     
         //Exercício 01
-        listar_arquivos();
+        // listar_arquivos();
+        listar_arquivos_dentro_de_diretorios();
 
     }
 
@@ -48,6 +49,48 @@ public class Aula21 {
         //Apresentação dos resultados
     }
 
+    public static void listar_arquivos(String diretorio){
+        //Variáveis
+        File dir_atual;
+        
+        //Entrada
+        //Abre diretório
+        dir_atual = new File(diretorio);
+        
+        // Lista arquivos do diretório
+        File[] arquivos = dir_atual.listFiles();
+        if( arquivos != null){
+            for(int idx=0; idx < arquivos.length; idx++){
+                File arq = arquivos[idx];
+                IO.imprimir("\t" + arq.getName());
+            }
+        }
+        
+
+    }
+
+    public static void listar_arquivos_dentro_de_diretorios(){
+        //Variáveis
+        File dir_atual;
+        
+        //Entrada
+        //Abre diretório
+        dir_atual = new File(".");
+        
+        // Lista arquivos do diretório
+        File[] arquivos = dir_atual.listFiles();
+        if( arquivos != null){
+            for(int idx=0; idx < arquivos.length; idx++){
+                File arq = arquivos[idx];
+                IO.imprimir(arq.getName());
+                if(arq.isDirectory()){
+                    listar_arquivos(arq.getName());
+                }
+            }
+        }
+        
+
+    }
    
 
 }
